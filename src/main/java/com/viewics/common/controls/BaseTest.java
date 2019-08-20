@@ -31,10 +31,6 @@ public class BaseTest {
 		return driver;
 	}
 
-//	public void setDriver(WebDriver driver) {
-//		this.driver = driver;
-//	}
-
 	protected MyntraController myntraController;
 
 	public MyntraController getMyntraController() {
@@ -62,6 +58,6 @@ public class BaseTest {
 	
 	@AfterClass
 	public void close() {
-//		driver.quit();
+//		driver.quit();   //purposefully this statement is been commented
 	}
 }

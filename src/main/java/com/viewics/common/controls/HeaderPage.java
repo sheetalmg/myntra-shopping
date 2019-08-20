@@ -12,7 +12,6 @@ public class HeaderPage extends BasePage{
 
 	public HeaderPage(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
 	}
 
 }

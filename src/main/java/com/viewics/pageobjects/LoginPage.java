@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 import org.testng.TestException;
 
 /**
@@ -71,6 +72,7 @@ public class LoginPage extends BasePage{
 			if(btn_Login.isEnabled()){
 				btn_Login.click();
 				wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//*[@class='login-title' and contains(text(),'Login to Myntra')]")));
+				Reporter.log("SignIn button clicked",true);
 			}
 		}
 		catch(Exception e){
@@ -82,6 +84,7 @@ public class LoginPage extends BasePage{
 	public void goToProfile() throws Exception{
 		try{
 			gotoProfile.click();
+			Reporter.log("Profile option clicked sucessfully",true);
 		}
 		catch(Exception e){
 			e.printStackTrace();

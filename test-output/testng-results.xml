@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+    <line>
+      <![CDATA[Your Done with adding items added to Cart]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="21286" started-at="2019-08-20T18:31:40Z" finished-at="2019-08-20T18:32:01Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="21286" started-at="2019-08-20T18:31:40Z" finished-at="2019-08-20T18:32:01Z">
+      <class name="com.viewics.ShoppingAtMyntra">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.viewics.ShoppingAtMyntra@641147d0]" name="setUp" is-config="true" duration-ms="6769" started-at="2019-08-21T00:01:40Z" finished-at="2019-08-21T00:01:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="searchItem()[pri:0, instance:com.viewics.ShoppingAtMyntra@641147d0]" name="searchItem" duration-ms="3166" started-at="2019-08-21T00:01:47Z" description="search expected item" finished-at="2019-08-21T00:01:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchItem -->
+        <test-method status="PASS" signature="addItemToWishList()[pri:0, instance:com.viewics.ShoppingAtMyntra@641147d0]" name="addItemToWishList" duration-ms="2029" started-at="2019-08-21T00:01:50Z" description="click on wish list for slected item" depends-on-methods="com.viewics.ShoppingAtMyntra.searchItem" finished-at="2019-08-21T00:01:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItemToWishList -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.viewics.ShoppingAtMyntra@641147d0]" name="login" duration-ms="2791" started-at="2019-08-21T00:01:52Z" description="login" depends-on-methods="com.viewics.ShoppingAtMyntra.addItemToWishList" finished-at="2019-08-21T00:01:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="additemToWishListAfterLogin()[pri:0, instance:com.viewics.ShoppingAtMyntra@641147d0]" name="additemToWishListAfterLogin" duration-ms="3652" started-at="2019-08-21T00:01:55Z" description="again added item to wishlist after login and check item in wishlist" depends-on-methods="com.viewics.ShoppingAtMyntra.login" finished-at="2019-08-21T00:01:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- additemToWishListAfterLogin -->
+        <test-method status="PASS" signature="checkwishlistItem()[pri:0, instance:com.viewics.ShoppingAtMyntra@641147d0]" name="checkwishlistItem" duration-ms="778" started-at="2019-08-21T00:01:59Z" description="check item in wishlist and added item to bag/cart" depends-on-methods="com.viewics.ShoppingAtMyntra.additemToWishListAfterLogin" finished-at="2019-08-21T00:01:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkwishlistItem -->
+        <test-method status="PASS" signature="checkItemInCart()[pri:0, instance:com.viewics.ShoppingAtMyntra@641147d0]" name="checkItemInCart" duration-ms="2074" started-at="2019-08-21T00:01:59Z" description="check item in cart/bag" depends-on-methods="com.viewics.ShoppingAtMyntra.checkwishlistItem" finished-at="2019-08-21T00:02:01Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Your Done with adding items added to Cart]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkItemInCart -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.viewics.ShoppingAtMyntra@641147d0]" name="close" is-config="true" duration-ms="0" started-at="2019-08-21T00:02:01Z" finished-at="2019-08-21T00:02:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.viewics.ShoppingAtMyntra -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

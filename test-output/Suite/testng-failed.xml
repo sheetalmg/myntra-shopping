@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.viewics.ShoppingAtMyntra">
+        <methods>
+          <include name="searchItem"/>
+          <include name="setUp"/>
+          <include name="login"/>
+          <include name="addItemToWishList"/>
+          <include name="checkwishlistItem"/>
+          <include name="close"/>
+          <include name="additemToWishListAfterLogin"/>
+          <include name="checkItemInCart"/>
+        </methods>
+      </class> <!-- com.viewics.ShoppingAtMyntra -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
